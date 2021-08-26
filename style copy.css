@@ -92,8 +92,8 @@ button:hover {
   opacity: 0.6;
 }
 
-button.cancel:hover {
-  opacity: 1;
+.button.cancel:hover {
+  opacity: 100;
 }
 
 /* Header ==================================== */
@@ -222,6 +222,8 @@ td.expense {
 
   opacity: 0;
   visibility: hidden;
+
+  z-index: 999;
 }
 
 .modal-overlay.active {
@@ -234,6 +236,9 @@ td.expense {
   padding: 2.4rem;
   /* width: 90%;
   max-width: 500px; */
+
+  position: relative;
+  z-index: 1;
 }
 /* Forme ================================== */
 #form {
